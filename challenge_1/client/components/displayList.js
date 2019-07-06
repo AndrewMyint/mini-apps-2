@@ -1,8 +1,7 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 
-
-const displayList = (props) => {
+const DisplayList = (props) => {
   const { data } = props;
   if (data === null) {
     return <li>Loading</li>;
@@ -19,4 +18,8 @@ const displayList = (props) => {
     </React.Fragment>
   );
 };
-export default displayList;
+export default DisplayList;
+
+DisplayList.propTypes = {
+  data: PropTypes.instanceOf(Array).isRequired,
+};
