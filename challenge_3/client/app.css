@@ -1,0 +1,12 @@
+.setBorder {
+  border: 2px solid black;
+  color: red;
+}
+
+.scordBoard {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  font-variant-numeric: tabular-nums;
+}
+
